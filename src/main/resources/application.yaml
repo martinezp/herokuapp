@@ -1,0 +1,3 @@
+herokuapp:
+  backend:
+    url: https://bpdts-test-app.herokuapp.com/
