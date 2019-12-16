@@ -15,12 +15,15 @@ repositories {
 }
 
 val ktor_version = "1.2.3-1.3.50-eap-5"
+val springfox_swagger_version = "2.9.2"
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.10.1")
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("io.ktor:ktor-client-apache:$ktor_version")
+    implementation("io.springfox:springfox-swagger2:$springfox_swagger_version")
+    implementation("io.springfox:springfox-swagger-ui:$springfox_swagger_version")
 
     testImplementation("org.junit.jupiter:junit-jupiter:5.5.2")
     testImplementation("io.mockk:mockk:1.9.3")
